@@ -8,8 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DD467B8E25784C0F00DC9705 /* AdventOfCode2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD467B8425784C0E00DC9705 /* AdventOfCode2020.framework */; };
-		DD467B9325784C0F00DC9705 /* AdventOfCode2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD467B9225784C0F00DC9705 /* AdventOfCode2020Tests.swift */; };
+		DD467B9325784C0F00DC9705 /* DayOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD467B9225784C0F00DC9705 /* DayOneTests.swift */; };
 		DD467B9525784C0F00DC9705 /* AdventOfCode2020.h in Headers */ = {isa = PBXBuildFile; fileRef = DD467B8725784C0F00DC9705 /* AdventOfCode2020.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD467BA125784C2200DC9705 /* DayOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD467BA025784C2200DC9705 /* DayOne.swift */; };
+		DD467BA825784CF500DC9705 /* DayOne.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BA725784CF500DC9705 /* DayOne.txt */; };
+		DD467BB225784EDE00DC9705 /* DayOne.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BA725784CF500DC9705 /* DayOne.txt */; };
+		DD467BBD257851D200DC9705 /* DayTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD467BBC257851D200DC9705 /* DayTwo.swift */; };
+		DD467BC1257851F400DC9705 /* DayTwo.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BC0257851F400DC9705 /* DayTwo.txt */; };
+		DD467BC62578525B00DC9705 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD467BC52578525B00DC9705 /* Extensions.swift */; };
+		DD467BCC257853DA00DC9705 /* DayTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD467BCB257853DA00DC9705 /* DayTwoTests.swift */; };
+		DD467BD12578545900DC9705 /* DayTwo.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BC0257851F400DC9705 /* DayTwo.txt */; };
+		DD467BD62578E34000DC9705 /* DayThree.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BD52578E34000DC9705 /* DayThree.txt */; };
+		DD8E409D2578F8EF00CF6B1D /* DayThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E409C2578F8EF00CF6B1D /* DayThree.swift */; };
+		DD8E40A12578FAC100CF6B1D /* DayThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E40A02578FAC100CF6B1D /* DayThreeTests.swift */; };
+		DD8E40A42578FAF600CF6B1D /* DayThree.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BD52578E34000DC9705 /* DayThree.txt */; };
+		DD8E4134257A310100CF6B1D /* DayFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E4133257A310000CF6B1D /* DayFour.swift */; };
+		DD8E413A257A31E600CF6B1D /* DayFour.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8E4139257A31E600CF6B1D /* DayFour.txt */; };
+		DD8E413E257A320500CF6B1D /* DayFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E413D257A320500CF6B1D /* DayFourTests.swift */; };
+		DD8E4143257A33C200CF6B1D /* DayFour.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8E4139257A31E600CF6B1D /* DayFour.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +43,20 @@
 		DD467B8725784C0F00DC9705 /* AdventOfCode2020.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventOfCode2020.h; sourceTree = "<group>"; };
 		DD467B8825784C0F00DC9705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD467B8D25784C0F00DC9705 /* AdventOfCode2020Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCode2020Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD467B9225784C0F00DC9705 /* AdventOfCode2020Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2020Tests.swift; sourceTree = "<group>"; };
+		DD467B9225784C0F00DC9705 /* DayOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOneTests.swift; sourceTree = "<group>"; };
 		DD467B9425784C0F00DC9705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD467BA025784C2200DC9705 /* DayOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOne.swift; sourceTree = "<group>"; };
+		DD467BA725784CF500DC9705 /* DayOne.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayOne.txt; sourceTree = "<group>"; };
+		DD467BBC257851D200DC9705 /* DayTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwo.swift; sourceTree = "<group>"; };
+		DD467BC0257851F400DC9705 /* DayTwo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayTwo.txt; sourceTree = "<group>"; };
+		DD467BC52578525B00DC9705 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DD467BCB257853DA00DC9705 /* DayTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwoTests.swift; sourceTree = "<group>"; };
+		DD467BD52578E34000DC9705 /* DayThree.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayThree.txt; sourceTree = "<group>"; };
+		DD8E409C2578F8EF00CF6B1D /* DayThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayThree.swift; sourceTree = "<group>"; };
+		DD8E40A02578FAC100CF6B1D /* DayThreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayThreeTests.swift; sourceTree = "<group>"; };
+		DD8E4133257A310000CF6B1D /* DayFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFour.swift; sourceTree = "<group>"; };
+		DD8E4139257A31E600CF6B1D /* DayFour.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayFour.txt; sourceTree = "<group>"; };
+		DD8E413D257A320500CF6B1D /* DayFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFourTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +99,11 @@
 		DD467B8625784C0F00DC9705 /* AdventOfCode2020 */ = {
 			isa = PBXGroup;
 			children = (
+				DD467BC42578524E00DC9705 /* Util */,
+				DD467BA625784CC200DC9705 /* Day One */,
+				DD467BB72578515500DC9705 /* Day Two */,
+				DD467BD42578E31E00DC9705 /* Day Three */,
+				DD8E4132257A30ED00CF6B1D /* Day Four */,
 				DD467B8725784C0F00DC9705 /* AdventOfCode2020.h */,
 				DD467B8825784C0F00DC9705 /* Info.plist */,
 			);
@@ -80,10 +113,57 @@
 		DD467B9125784C0F00DC9705 /* AdventOfCode2020Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DD467B9225784C0F00DC9705 /* AdventOfCode2020Tests.swift */,
+				DD467B9225784C0F00DC9705 /* DayOneTests.swift */,
+				DD467BCB257853DA00DC9705 /* DayTwoTests.swift */,
+				DD8E40A02578FAC100CF6B1D /* DayThreeTests.swift */,
+				DD8E413D257A320500CF6B1D /* DayFourTests.swift */,
 				DD467B9425784C0F00DC9705 /* Info.plist */,
 			);
 			path = AdventOfCode2020Tests;
+			sourceTree = "<group>";
+		};
+		DD467BA625784CC200DC9705 /* Day One */ = {
+			isa = PBXGroup;
+			children = (
+				DD467BA025784C2200DC9705 /* DayOne.swift */,
+				DD467BA725784CF500DC9705 /* DayOne.txt */,
+			);
+			path = "Day One";
+			sourceTree = "<group>";
+		};
+		DD467BB72578515500DC9705 /* Day Two */ = {
+			isa = PBXGroup;
+			children = (
+				DD467BBC257851D200DC9705 /* DayTwo.swift */,
+				DD467BC0257851F400DC9705 /* DayTwo.txt */,
+			);
+			path = "Day Two";
+			sourceTree = "<group>";
+		};
+		DD467BC42578524E00DC9705 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DD467BC52578525B00DC9705 /* Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DD467BD42578E31E00DC9705 /* Day Three */ = {
+			isa = PBXGroup;
+			children = (
+				DD8E409C2578F8EF00CF6B1D /* DayThree.swift */,
+				DD467BD52578E34000DC9705 /* DayThree.txt */,
+			);
+			path = "Day Three";
+			sourceTree = "<group>";
+		};
+		DD8E4132257A30ED00CF6B1D /* Day Four */ = {
+			isa = PBXGroup;
+			children = (
+				DD8E4133257A310000CF6B1D /* DayFour.swift */,
+				DD8E4139257A31E600CF6B1D /* DayFour.txt */,
+			);
+			path = "Day Four";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +227,7 @@
 				TargetAttributes = {
 					DD467B8325784C0E00DC9705 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					DD467B8C25784C0F00DC9705 = {
 						CreatedOnToolsVersion = 12.1;
@@ -177,6 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD467BC1257851F400DC9705 /* DayTwo.txt in Resources */,
+				DD467BA825784CF500DC9705 /* DayOne.txt in Resources */,
+				DD467BD62578E34000DC9705 /* DayThree.txt in Resources */,
+				DD8E413A257A31E600CF6B1D /* DayFour.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD467BD12578545900DC9705 /* DayTwo.txt in Resources */,
+				DD467BB225784EDE00DC9705 /* DayOne.txt in Resources */,
+				DD8E40A42578FAF600CF6B1D /* DayThree.txt in Resources */,
+				DD8E4143257A33C200CF6B1D /* DayFour.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8E4134257A310100CF6B1D /* DayFour.swift in Sources */,
+				DD467BA125784C2200DC9705 /* DayOne.swift in Sources */,
+				DD467BC62578525B00DC9705 /* Extensions.swift in Sources */,
+				DD467BBD257851D200DC9705 /* DayTwo.swift in Sources */,
+				DD8E409D2578F8EF00CF6B1D /* DayThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD467B9325784C0F00DC9705 /* AdventOfCode2020Tests.swift in Sources */,
+				DD467B9325784C0F00DC9705 /* DayOneTests.swift in Sources */,
+				DD467BCC257853DA00DC9705 /* DayTwoTests.swift in Sources */,
+				DD8E413E257A320500CF6B1D /* DayFourTests.swift in Sources */,
+				DD8E40A12578FAC100CF6B1D /* DayThreeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +417,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -340,6 +438,7 @@
 		DD467B9925784C0F00DC9705 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.searle.tim.advent.AdventOfCode2020;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +463,7 @@
 		DD467B9A25784C0F00DC9705 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -386,6 +487,7 @@
 		DD467B9C25784C0F00DC9705 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AdventOfCode2020Tests/Info.plist;
@@ -403,6 +505,7 @@
 		DD467B9D25784C0F00DC9705 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AdventOfCode2020Tests/Info.plist;
