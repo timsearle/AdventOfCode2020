@@ -1,21 +1,21 @@
 import Foundation
 
-final class DayFive {
+public final class DayFive {
     private let passes: [String]
     private let rows: [Int]
     private let columns: [Int]
 
-    init(passes: [String]) {
+    public init(passes: [String]) {
         self.passes = passes
         self.rows = Array(0...127)
         self.columns = Array(0...7)
     }
 
-    func partOne() -> Int {
+    public func partOne() -> Int {
         return seatIDs().max()!
     }
 
-    func partTwo() -> Int {
+    public func partTwo() -> Int {
         var seats = seatIDs()
 
         var previous = seats.removeFirst()

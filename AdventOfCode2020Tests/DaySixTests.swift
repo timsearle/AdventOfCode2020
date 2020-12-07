@@ -1,5 +1,5 @@
 import XCTest
-@testable import AdventOfCode2020
+import AdventOfCode2020
 
 class DaySixTests: XCTestCase {
     private func makeInput(sample: Bool = false) -> [[String]] {

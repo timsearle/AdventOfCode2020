@@ -12,4 +12,20 @@ public extension String {
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
         return String(self[start ..< end])
     }
+
+    func removingDigits() -> String {
+        components(separatedBy: .decimalDigits).joined()
+    }
+}
+
+public extension Array where Element == String {
+    func trimmingCharacters(in set: CharacterSet) -> Array {
+        map { $0.trimmingCharacters(in: set) }
+    }
+}
+
+public extension CharacterSet {
+    static var whitespacesAndPunctuation: CharacterSet {
+        CharacterSet.whitespaces.union(.punctuationCharacters)
+    }
 }

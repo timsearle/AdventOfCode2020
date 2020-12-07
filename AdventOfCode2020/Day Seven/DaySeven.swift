@@ -1,51 +1,48 @@
 import Foundation
 
-final class DaySeven {
+public final class DaySeven {
     private let bags: [String: [String]]
+    private let target: String
 
     var visited = Set<String>()
 
-    init(bags: [String: [String]]) {
+    public init(bags: [String: [String]], target: String = "shiny gold") {
         self.bags = bags
+        self.target = target
     }
 
-    func partOne() -> Int {
+    public func partOne() -> Int {
         var count = 0
 
-        for (bag, _) in bags where bag != "shiny gold bag" {
+        for (bag, _) in bags where bag != target {
             visited.removeAll()
-            count += dfs(name: "shiny gold bag", bag: bag)
+            count += dfs(name: target, bag: bag)
         }
 
         return count
     }
 
-    func partTwo() -> Int {
-        return countChildren(bag: "shiny gold bag")
+    public func partTwo() -> Int {
+        countChildren(bag: target)
     }
 
-    func countChildren(bag: String) -> Int {
-        guard let children = bags[bag], !children.isEmpty else {
-            return 0
+    private func countChildren(bag: String) -> Int {
+        let children = bags[bag]!
+
+        return children.reduce(children.count) { count, child in
+            count + countChildren(bag: child)
         }
-
-        var count = children.count
-
-        for child in children {
-            count += countChildren(bag: child)
-        }
-
-        return count
     }
 
-    func dfs(name: String, bag: String) -> Int {
+    private func dfs(name: String, bag: String) -> Int {
         visited.insert(bag)
+
         var count = 0
 
         if bag == name {
             return 1
         } else {
-            for containedBag in bags[bag] ?? [] {
+            for containedBag in bags[bag]! {
                 if !visited.contains(containedBag) {
                     count += dfs(name: name, bag: containedBag)
                 }

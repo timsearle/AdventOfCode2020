@@ -1,13 +1,13 @@
 import Foundation
 
-final class DaySix {
+public final class DaySix {
     private let answerGroups: [[String]]
 
-    init(answerGroups: [[String]]) {
+    public init(answerGroups: [[String]]) {
         self.answerGroups = answerGroups
     }
 
-    func partOne() -> Int {
+    public func partOne() -> Int {
         var total = 0
 
         for group in answerGroups {
@@ -25,7 +25,7 @@ final class DaySix {
         return total
     }
 
-    func partTwo() -> Int {
+    public func partTwo() -> Int {
         var total = 0
 
         for answerList in answerGroups {
