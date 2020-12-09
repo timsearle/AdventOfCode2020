@@ -14,7 +14,7 @@ public final class DayNine {
 
     public func partOne() -> Int {
         for i in preambleSize..<series.count {
-            if two_sum(Array(series[i-preambleSize..<i]), target: series[i]) == nil {
+            if DayOne.two_sum(Array(series[i-preambleSize..<i]), target: series[i]) == nil {
                 return series[i]
             }
         }
@@ -46,19 +46,5 @@ public final class DayNine {
         }
 
         return targetNumbers
-    }
-
-    private func two_sum(_ array: [Int], target: Int) -> (Int, Int)? {
-        var cache = [Int: Int]()
-
-        for value in array {
-            if let exists = cache[value] {
-                return (exists, value)
-            }
-
-            cache[target - value] = value
-        }
-
-        return nil
     }
 }

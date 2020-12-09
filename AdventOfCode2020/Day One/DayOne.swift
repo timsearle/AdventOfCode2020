@@ -8,14 +8,14 @@ public final class DayOne {
     }
 
     public func partOne() -> Int {
-        if let (a, b) = two_sum(input, target: 2020) {
+        if let (a, b) = DayOne.two_sum(input, target: 2020) {
             return a * b
         }
 
         return 0
     }
 
-    private func two_sum(_ array: [Int], target: Int) -> (Int, Int)? {
+    static func two_sum(_ array: [Int], target: Int) -> (Int, Int)? {
         var cache = [Int: Int]()
 
         for value in array {
@@ -39,7 +39,7 @@ public final class DayOne {
 
     private func three_sum(_ array: [Int], target: Int) -> (Int, Int, Int)? {
         for value in array {
-            if let result = two_sum(array, target: target - value) {
+            if let result = DayOne.two_sum(array, target: target - value) {
                 return (value, result.0, result.1)
             }
         }
