@@ -48,6 +48,12 @@
 		DDE25B35257F797B007231BA /* DayEight-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE25B2B257F78A1007231BA /* DayEight-sample.txt */; };
 		DDE25B39257F7A7E007231BA /* DayEight.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE25B38257F7A7E007231BA /* DayEight.txt */; };
 		DDE25B3C257F7A87007231BA /* DayEight.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE25B38257F7A7E007231BA /* DayEight.txt */; };
+		DDE71B832580C8FB008AE9BE /* DayNineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71B822580C8FB008AE9BE /* DayNineTests.swift */; };
+		DDE71B8A2580C935008AE9BE /* DayNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71B892580C935008AE9BE /* DayNine.swift */; };
+		DDE71B902580C995008AE9BE /* DayNine-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71B8F2580C995008AE9BE /* DayNine-sample.txt */; };
+		DDE71B952580CAEC008AE9BE /* DayNine-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71B8F2580C995008AE9BE /* DayNine-sample.txt */; };
+		DDE71B992580CB3F008AE9BE /* DayNine.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71B982580CB3F008AE9BE /* DayNine.txt */; };
+		DDE71B9C2580CB49008AE9BE /* DayNine.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71B982580CB3F008AE9BE /* DayNine.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +100,10 @@
 		DDE25B2B257F78A1007231BA /* DayEight-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEight-sample.txt"; sourceTree = "<group>"; };
 		DDE25B2F257F78B7007231BA /* DayEightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEightTests.swift; sourceTree = "<group>"; };
 		DDE25B38257F7A7E007231BA /* DayEight.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayEight.txt; sourceTree = "<group>"; };
+		DDE71B822580C8FB008AE9BE /* DayNineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNineTests.swift; sourceTree = "<group>"; };
+		DDE71B892580C935008AE9BE /* DayNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNine.swift; sourceTree = "<group>"; };
+		DDE71B8F2580C995008AE9BE /* DayNine-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayNine-sample.txt"; sourceTree = "<group>"; };
+		DDE71B982580CB3F008AE9BE /* DayNine.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayNine.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +175,6 @@
 		DD467B8625784C0F00DC9705 /* AdventOfCode2020 */ = {
 			isa = PBXGroup;
 			children = (
-				DDE25B24257F7790007231BA /* Day Eight */,
 				DD467BC42578524E00DC9705 /* Util */,
 				DD467BA625784CC200DC9705 /* Day One */,
 				DD467BB72578515500DC9705 /* Day Two */,
@@ -174,6 +183,8 @@
 				DD2D2F3D257BD5E400F17211 /* Day Five */,
 				DD2D2F5B257CDC1D00F17211 /* Day Six */,
 				DD2D2F76257E286900F17211 /* Day Seven */,
+				DDE25B24257F7790007231BA /* Day Eight */,
+				DDE71B882580C92A008AE9BE /* Day Nine */,
 				DD467B8725784C0F00DC9705 /* AdventOfCode2020.h */,
 				DD467B8825784C0F00DC9705 /* Info.plist */,
 			);
@@ -191,6 +202,7 @@
 				DD2D2F69257CDC6900F17211 /* DaySixTests.swift */,
 				DD2D2F7D257E292200F17211 /* DaySevenTests.swift */,
 				DDE25B2F257F78B7007231BA /* DayEightTests.swift */,
+				DDE71B822580C8FB008AE9BE /* DayNineTests.swift */,
 				DD467B9425784C0F00DC9705 /* Info.plist */,
 			);
 			path = AdventOfCode2020Tests;
@@ -248,6 +260,16 @@
 				DDE25B38257F7A7E007231BA /* DayEight.txt */,
 			);
 			path = "Day Eight";
+			sourceTree = "<group>";
+		};
+		DDE71B882580C92A008AE9BE /* Day Nine */ = {
+			isa = PBXGroup;
+			children = (
+				DDE71B892580C935008AE9BE /* DayNine.swift */,
+				DDE71B8F2580C995008AE9BE /* DayNine-sample.txt */,
+				DDE71B982580CB3F008AE9BE /* DayNine.txt */,
+			);
+			path = "Day Nine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,7 +369,9 @@
 				DD467BD62578E34000DC9705 /* DayThree.txt in Resources */,
 				DDE25B2C257F78A1007231BA /* DayEight-sample.txt in Resources */,
 				DD2D2F70257CF09900F17211 /* DaySix-sample.txt in Resources */,
+				DDE71B902580C995008AE9BE /* DayNine-sample.txt in Resources */,
 				DD8E413A257A31E600CF6B1D /* DayFour.txt in Resources */,
+				DDE71B992580CB3F008AE9BE /* DayNine.txt in Resources */,
 				DDE25B39257F7A7E007231BA /* DayEight.txt in Resources */,
 				DD2D2F63257CDC5800F17211 /* DaySix.txt in Resources */,
 				DD2D2F8F257E3D2100F17211 /* DaySeven.txt in Resources */,
@@ -363,9 +387,11 @@
 				DD467BD12578545900DC9705 /* DayTwo.txt in Resources */,
 				DD2D2F58257BD97000F17211 /* DayFive.txt in Resources */,
 				DD467BB225784EDE00DC9705 /* DayOne.txt in Resources */,
+				DDE71B952580CAEC008AE9BE /* DayNine-sample.txt in Resources */,
 				DDE25B35257F797B007231BA /* DayEight-sample.txt in Resources */,
 				DD2D2F73257CF0C800F17211 /* DaySix-sample.txt in Resources */,
 				DD8E40A42578FAF600CF6B1D /* DayThree.txt in Resources */,
+				DDE71B9C2580CB49008AE9BE /* DayNine.txt in Resources */,
 				DDE25B3C257F7A87007231BA /* DayEight.txt in Resources */,
 				DD2D2F66257CDC5B00F17211 /* DaySix.txt in Resources */,
 				DD2D2F92257E3D2D00F17211 /* DaySeven.txt in Resources */,
@@ -383,6 +409,7 @@
 			files = (
 				DD2D2F78257E291300F17211 /* DaySeven.swift in Sources */,
 				DD8E4134257A310100CF6B1D /* DayFour.swift in Sources */,
+				DDE71B8A2580C935008AE9BE /* DayNine.swift in Sources */,
 				DD2D2F5D257CDC3700F17211 /* DaySix.swift in Sources */,
 				DD467BA125784C2200DC9705 /* DayOne.swift in Sources */,
 				DD467BC62578525B00DC9705 /* Extensions.swift in Sources */,
@@ -404,6 +431,7 @@
 				DD467BCC257853DA00DC9705 /* DayTwoTests.swift in Sources */,
 				DD2D2F6A257CDC6900F17211 /* DaySixTests.swift in Sources */,
 				DD8E413E257A320500CF6B1D /* DayFourTests.swift in Sources */,
+				DDE71B832580C8FB008AE9BE /* DayNineTests.swift in Sources */,
 				DD8E40A12578FAC100CF6B1D /* DayThreeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
