@@ -14,8 +14,8 @@ class DayTenTests: XCTestCase {
 
     func testDayTen_1() {
         let dayTen = DayTen(input: makeInput())
-        measure {
+//        measure {
             XCTAssertEqual(2263, dayTen.partOne())
-        }
+//        }
     }
 }

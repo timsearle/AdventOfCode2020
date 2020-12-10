@@ -11,7 +11,7 @@ public final class DayTen {
     public func partOne() -> Int {
         var one = 0
         var three = 0
-        var adapters = self.adapters
+        var adapters = self.adapters.sorted()
 
         nextAdapter(from: &adapters, source: 0, oneDifferenceCount: &one, threeDifferenceCount: &three)
 
@@ -20,17 +20,18 @@ public final class DayTen {
 
     private func nextAdapter(from adapters: inout [Int], source: Int, oneDifferenceCount: inout Int, threeDifferenceCount: inout Int) {
 
-        guard let min = adapters.removingMin() else {
-            // empty array
+        guard !adapters.isEmpty else {
             return
         }
 
-        if min - source == 3 {
+        let first = adapters.removeFirst()
+
+        if first - source == 3 {
             threeDifferenceCount += 1
-        } else if min - source == 1 {
+        } else if first - source == 1 {
             oneDifferenceCount += 1
         }
 
-        nextAdapter(from: &adapters, source: min, oneDifferenceCount: &oneDifferenceCount, threeDifferenceCount: &threeDifferenceCount)
+        nextAdapter(from: &adapters, source: first, oneDifferenceCount: &oneDifferenceCount, threeDifferenceCount: &threeDifferenceCount)
     }
 }
