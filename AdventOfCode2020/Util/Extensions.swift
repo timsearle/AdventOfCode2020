@@ -24,6 +24,18 @@ public extension Array where Element == String {
     }
 }
 
+public extension Array where Element == Int {
+    mutating func removingMin() -> Int? {
+        guard let minValue = self.min() else {
+            return nil
+        }
+
+        remove(at: firstIndex(of: minValue)!)
+
+        return minValue
+    }
+}
+
 public extension CharacterSet {
     static var whitespacesAndPunctuation: CharacterSet {
         CharacterSet.whitespaces.union(.punctuationCharacters)

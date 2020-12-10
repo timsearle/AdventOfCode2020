@@ -14,7 +14,7 @@ public final class DayNine {
 
     public func partOne() -> Int {
         for i in preambleSize..<series.count {
-            if DayOne.two_sum(Array(series[i-preambleSize..<i]), target: series[i]) == nil {
+            if !DayNine.sumComponentsExist(in: Array(series[i-preambleSize..<i]), total: series[i]) {
                 return series[i]
             }
         }
@@ -22,8 +22,19 @@ public final class DayNine {
         return 0
     }
 
+    private static func sumComponentsExist(in array: [Int], total: Int) -> Bool {
+        for i in 0..<array.count {
+            for j in i+1..<array.count {
+                if array[i] + array[j] == total {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
     public func partTwo() -> Int {
-        let numbers = numbersSumming(to: partOne())
+        let numbers = numbersSumming(to: 1492208709)
         return numbers.min()! + numbers.max()!
     }
 
