@@ -9,19 +9,14 @@ public final class DayEleven {
 
     public func partOne() -> Int {
         var seats = self.seats
-        var occupiedSeats = -1
+        var lastState = [[String]]()
 
-        while true {
+        while lastState != seats {
+            lastState = seats
             seats = runSeatModel(on: seats)
-            let count = countOccupiedSeats(seats)
-            if occupiedSeats != count {
-                occupiedSeats = count
-            } else {
-                break
-            }
         }
 
-        return occupiedSeats
+        return countOccupiedSeats(seats)
     }
 
     private func runSeatModel(on seats: [[String]]) -> [[String]] {
@@ -67,19 +62,14 @@ public final class DayEleven {
 
     public func partTwo() -> Int {
         var seats = self.seats
-        var occupiedSeats = -1
+        var lastState = [[String]]()
 
-        while true {
-            seats = runSeatModel2(on: seats)
-            let count = countOccupiedSeats(seats)
-            if occupiedSeats != count {
-                occupiedSeats = count
-            } else {
-                break
-            }
+        while lastState != seats {
+            lastState = seats
+            seats = runSeatModel(on: seats)
         }
 
-        return occupiedSeats
+        return countOccupiedSeats(seats)
     }
 
     private func runSeatModel2(on seats: [[String]]) -> [[String]] {
