@@ -34,4 +34,43 @@ public final class DayTen {
 
         nextAdapter(from: &adapters, source: first, oneDifferenceCount: &oneDifferenceCount, threeDifferenceCount: &threeDifferenceCount)
     }
+
+    public func partTwo() -> Int {
+        let splitValues = split((differences([0] + adapters.sorted()) + [3]))
+        return splitValues.map(numberOfArrangements).reduce(1, *)
+    }
+
+    private func differences(_ input: [Int]) -> [Int] {
+        var result = [Int]()
+
+        for i in 1..<input.count {
+            result.append(input[i] - input[i - 1])
+        }
+
+        return result
+    }
+
+    private func split(_ input: [Int]) -> [[Int]] {
+        var result = [[Int]]()
+
+        var pending = [Int]()
+        for value in input {
+            if value == 3 {
+                result.append(pending)
+                result.append([3])
+                pending.removeAll()
+            }
+        }
+
+        return result
+    }
+
+    private func numberOfArrangements(_ input: [Int]) -> Int {
+        guard input.count > 1 else {
+            return 1
+        }
+
+        // TODO
+        return 0
+    }
 }
