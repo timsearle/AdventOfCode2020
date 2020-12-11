@@ -60,6 +60,12 @@
 		DDE71BCC2582245C008AE9BE /* DayTen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71BC8258223FF008AE9BE /* DayTen-sample.txt */; };
 		DDE71BD0258224A4008AE9BE /* DayTen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71BCF258224A4008AE9BE /* DayTen.txt */; };
 		DDE71BD3258224C5008AE9BE /* DayTen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71BCF258224A4008AE9BE /* DayTen.txt */; };
+		DDE71C3125836EE5008AE9BE /* DayEleven.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71C3025836EE5008AE9BE /* DayEleven.swift */; };
+		DDE71C3725836F0B008AE9BE /* DayEleven-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71C3625836F0B008AE9BE /* DayEleven-sample.txt */; };
+		DDE71C3825836F0B008AE9BE /* DayEleven-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71C3625836F0B008AE9BE /* DayEleven-sample.txt */; };
+		DDE71C3D25837186008AE9BE /* DayElevenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71C3B25837186008AE9BE /* DayElevenTests.swift */; };
+		DDE71C492583790A008AE9BE /* DayEleven.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71C482583790A008AE9BE /* DayEleven.txt */; };
+		DDE71C4C25837914008AE9BE /* DayEleven.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71C482583790A008AE9BE /* DayEleven.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +120,10 @@
 		DDE71BC2258223B8008AE9BE /* DayTenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTenTests.swift; sourceTree = "<group>"; };
 		DDE71BC8258223FF008AE9BE /* DayTen-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayTen-sample.txt"; sourceTree = "<group>"; };
 		DDE71BCF258224A4008AE9BE /* DayTen.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayTen.txt; sourceTree = "<group>"; };
+		DDE71C3025836EE5008AE9BE /* DayEleven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEleven.swift; sourceTree = "<group>"; };
+		DDE71C3625836F0B008AE9BE /* DayEleven-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEleven-sample.txt"; sourceTree = "<group>"; };
+		DDE71C3B25837186008AE9BE /* DayElevenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayElevenTests.swift; sourceTree = "<group>"; };
+		DDE71C482583790A008AE9BE /* DayEleven.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayEleven.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +195,7 @@
 		DD467B8625784C0F00DC9705 /* AdventOfCode2020 */ = {
 			isa = PBXGroup;
 			children = (
+				DDE71C2F25836EA2008AE9BE /* Day Eleven */,
 				DDE71BBB258222F0008AE9BE /* Day Ten */,
 				DD467BC42578524E00DC9705 /* Util */,
 				DD467BA625784CC200DC9705 /* Day One */,
@@ -215,6 +226,7 @@
 				DDE25B2F257F78B7007231BA /* DayEightTests.swift */,
 				DDE71B822580C8FB008AE9BE /* DayNineTests.swift */,
 				DDE71BC2258223B8008AE9BE /* DayTenTests.swift */,
+				DDE71C3B25837186008AE9BE /* DayElevenTests.swift */,
 				DD467B9425784C0F00DC9705 /* Info.plist */,
 			);
 			path = AdventOfCode2020Tests;
@@ -294,6 +306,16 @@
 			path = "Day Ten";
 			sourceTree = "<group>";
 		};
+		DDE71C2F25836EA2008AE9BE /* Day Eleven */ = {
+			isa = PBXGroup;
+			children = (
+				DDE71C3025836EE5008AE9BE /* DayEleven.swift */,
+				DDE71C3625836F0B008AE9BE /* DayEleven-sample.txt */,
+				DDE71C482583790A008AE9BE /* DayEleven.txt */,
+			);
+			path = "Day Eleven";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -351,7 +373,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					DD467B8325784C0E00DC9705 = {
 						CreatedOnToolsVersion = 12.1;
@@ -391,6 +413,7 @@
 				DD467BA825784CF500DC9705 /* DayOne.txt in Resources */,
 				DD467BD62578E34000DC9705 /* DayThree.txt in Resources */,
 				DDE25B2C257F78A1007231BA /* DayEight-sample.txt in Resources */,
+				DDE71C492583790A008AE9BE /* DayEleven.txt in Resources */,
 				DD2D2F70257CF09900F17211 /* DaySix-sample.txt in Resources */,
 				DDE71BC925822400008AE9BE /* DayTen-sample.txt in Resources */,
 				DDE71B902580C995008AE9BE /* DayNine-sample.txt in Resources */,
@@ -400,6 +423,7 @@
 				DD2D2F63257CDC5800F17211 /* DaySix.txt in Resources */,
 				DD2D2F8F257E3D2100F17211 /* DaySeven.txt in Resources */,
 				DD2D2F51257BD94C00F17211 /* DayFive.txt in Resources */,
+				DDE71C3725836F0B008AE9BE /* DayEleven-sample.txt in Resources */,
 				DD2D2F86257E299600F17211 /* DaySeven-sample.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +437,7 @@
 				DD2D2F58257BD97000F17211 /* DayFive.txt in Resources */,
 				DD467BB225784EDE00DC9705 /* DayOne.txt in Resources */,
 				DDE71B952580CAEC008AE9BE /* DayNine-sample.txt in Resources */,
+				DDE71C4C25837914008AE9BE /* DayEleven.txt in Resources */,
 				DDE25B35257F797B007231BA /* DayEight-sample.txt in Resources */,
 				DDE71BCC2582245C008AE9BE /* DayTen-sample.txt in Resources */,
 				DD2D2F73257CF0C800F17211 /* DaySix-sample.txt in Resources */,
@@ -422,6 +447,7 @@
 				DD2D2F66257CDC5B00F17211 /* DaySix.txt in Resources */,
 				DD2D2F92257E3D2D00F17211 /* DaySeven.txt in Resources */,
 				DD8E4143257A33C200CF6B1D /* DayFour.txt in Resources */,
+				DDE71C3825836F0B008AE9BE /* DayEleven-sample.txt in Resources */,
 				DD2D2F89257E299900F17211 /* DaySeven-sample.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +466,7 @@
 				DD467BA125784C2200DC9705 /* DayOne.swift in Sources */,
 				DD467BC62578525B00DC9705 /* Extensions.swift in Sources */,
 				DD467BBD257851D200DC9705 /* DayTwo.swift in Sources */,
+				DDE71C3125836EE5008AE9BE /* DayEleven.swift in Sources */,
 				DDE25B26257F77AC007231BA /* DayEight.swift in Sources */,
 				DD2D2F3F257BD5F400F17211 /* DayFive.swift in Sources */,
 				DDE71BBD258222FC008AE9BE /* DayTen.swift in Sources */,
@@ -459,6 +486,7 @@
 				DD2D2F6A257CDC6900F17211 /* DaySixTests.swift in Sources */,
 				DDE71BC3258223B9008AE9BE /* DayTenTests.swift in Sources */,
 				DD8E413E257A320500CF6B1D /* DayFourTests.swift in Sources */,
+				DDE71C3D25837186008AE9BE /* DayElevenTests.swift in Sources */,
 				DDE71B832580C8FB008AE9BE /* DayNineTests.swift in Sources */,
 				DD8E40A12578FAC100CF6B1D /* DayThreeTests.swift in Sources */,
 			);
@@ -590,7 +618,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

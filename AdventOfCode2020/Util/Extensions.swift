@@ -18,6 +18,12 @@ public extension String {
     }
 }
 
+public extension Array {
+    subscript (safe index: Int) -> Element? {
+      indices.contains(index) ? self[index] : nil
+    }
+}
+
 public extension Array where Element == String {
     func trimmingCharacters(in set: CharacterSet) -> Array {
         map { $0.trimmingCharacters(in: set) }
