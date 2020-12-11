@@ -30,15 +30,13 @@ public final class DayEleven {
         for row in 0..<seats.count {
             for column in 0..<seats[row].count {
                 switch seats[row][column] {
-                case ".":
-                    continue
                 case "#":
-                    if adjacentSeats(of: (row,column), in: seats).filter({ $0 == "#" }).count >= 4 {
+                    if adjacentSeats(of: (row,column), in: seats) >= 4 {
                         result[row][column] = "L"
                     }
                 case "L":
                     // Free
-                    if adjacentSeats(of: (row,column), in: seats).filter({ $0 != "L" }).isEmpty {
+                    if adjacentSeats(of: (row,column), in: seats) == 0 {
                         result[row][column] = "#"
                     }
                 default:
@@ -50,19 +48,21 @@ public final class DayEleven {
         return result
     }
 
-    private func adjacentSeats(of seat: (Int, Int), in seats: [[String]]) -> [String] {
-        let l = (seat.0, seat.1 - 1)
-        let r = (seat.0, seat.1 + 1)
-        let t = (seat.0 - 1, seat.1)
-        let b = (seat.0 + 1, seat.1)
-        let tr = (seat.0 - 1, seat.1 + 1)
-        let tl = (seat.0 - 1, seat.1 - 1)
-        let bl = (seat.0 + 1, seat.1 - 1)
-        let br = (seat.0 + 1, seat.1 + 1)
+    private func adjacentSeats(of seat: (Int, Int), in seats: [[String]]) -> Int {
+        var count = 0
 
-        let result = [seats[safe:l.0]?[safe:l.1], seats[safe:r.0]?[safe:r.1], seats[safe:t.0]?[safe:t.1], seats[safe:b.0]?[safe:b.1], seats[safe:tr.0]?[safe:tr.1], seats[safe:tl.0]?[safe:tl.1], seats[safe:bl.0]?[safe:bl.1], seats[safe:br.0]?[safe:br.1]].filter { $0 != "." } .compactMap { $0 }
+        [(seat.0, seat.1 - 1),
+         (seat.0, seat.1 + 1),
+         (seat.0 - 1, seat.1),
+         (seat.0 + 1, seat.1),
+         (seat.0 - 1, seat.1 + 1),
+         (seat.0 - 1, seat.1 - 1),
+         (seat.0 + 1, seat.1 - 1),
+         (seat.0 + 1, seat.1 + 1)].forEach { seat in
+            count += seats[safe:seat.0]?[safe:seat.1] == "#" ? 1 : 0
+         }
 
-        return result
+        return count
     }
 
     public func partTwo() -> Int {
