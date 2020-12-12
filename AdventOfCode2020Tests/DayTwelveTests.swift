@@ -14,7 +14,9 @@ class DayTwelveTests: XCTestCase {
     
     func testDayTwelve_1() {
         let dayTwelve = DayTwelve(input: makeInput())
-        XCTAssertEqual(420, dayTwelve.partOne())
+        measure {
+            XCTAssertEqual(420, dayTwelve.partOne())
+        }
     }
 
     func testDayTwelve_2_sample() {
@@ -24,6 +26,8 @@ class DayTwelveTests: XCTestCase {
 
     func testDayTwelve_2() {
         let dayTwelve = DayTwelve(input: makeInput())
-        XCTAssertEqual(42073, dayTwelve.partTwo())
+        measure {
+            XCTAssertEqual(42073, dayTwelve.partTwo())
+        }
     }
 }

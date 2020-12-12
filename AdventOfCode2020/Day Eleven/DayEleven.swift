@@ -1,25 +1,31 @@
 import Foundation
 
 public final class DayEleven {
-    private let seats: [[String]]
+    private let seats: [[Character]]
+
+    var didMutatePartOne = false
+    var didMutatePartTwo = false
 
     public init(input: String) {
-        seats = input.components(separatedBy: .newlines).filter { !$0.isEmpty }.map { $0.map { String($0) } }
+        seats = input.components(separatedBy: .newlines).filter { !$0.isEmpty }.map { $0.map { $0 } }
     }
 
     public func partOne() -> Int {
         var seats = self.seats
-        var lastState = [[String]]()
 
-        while lastState != seats {
-            lastState = seats
+        while true {
             seats = runSeatModel(on: seats)
+            if !didMutatePartOne {
+                break
+            } else {
+                didMutatePartOne = false
+            }
         }
 
         return countOccupiedSeats(seats)
     }
 
-    private func runSeatModel(on seats: [[String]]) -> [[String]] {
+    private func runSeatModel(on seats: [[Character]]) -> [[Character]] {
         var result = seats
 
         for row in 0..<seats.count {
@@ -27,11 +33,13 @@ public final class DayEleven {
                 switch seats[row][column] {
                 case "#":
                     if adjacentSeats(of: (row,column), in: seats) >= 4 {
+                        didMutatePartOne = true
                         result[row][column] = "L"
                     }
                 case "L":
                     // Free
                     if adjacentSeats(of: (row,column), in: seats) == 0 {
+                        didMutatePartOne = true
                         result[row][column] = "#"
                     }
                 default:
@@ -43,7 +51,7 @@ public final class DayEleven {
         return result
     }
 
-    private func adjacentSeats(of seat: (Int, Int), in seats: [[String]]) -> Int {
+    private func adjacentSeats(of seat: (Int, Int), in seats: [[Character]]) -> Int {
         var count = 0
 
         [(seat.0, seat.1 - 1),
@@ -62,17 +70,20 @@ public final class DayEleven {
 
     public func partTwo() -> Int {
         var seats = self.seats
-        var lastState = [[String]]()
 
-        while lastState != seats {
-            lastState = seats
-            seats = runSeatModel(on: seats)
+        while true {
+            seats = runSeatModel2(on: seats)
+            if !didMutatePartTwo {
+                break
+            } else {
+                didMutatePartTwo = false
+            }
         }
 
         return countOccupiedSeats(seats)
     }
 
-    private func runSeatModel2(on seats: [[String]]) -> [[String]] {
+    private func runSeatModel2(on seats: [[Character]]) -> [[Character]] {
         var result = seats
 
         for row in 0..<seats.count {
@@ -83,11 +94,13 @@ public final class DayEleven {
                 case "#":
                     if visibleOccupiedSeats(of: (row,column), in: seats) >= 5 {
                         result[row][column] = "L"
+                        didMutatePartTwo = true
                     }
                 case "L":
                     // Free
                     if visibleOccupiedSeats(of: (row,column), in: seats) == 0 {
                         result[row][column] = "#"
+                        didMutatePartTwo = true
                     }
                 default:
                     continue
@@ -98,7 +111,7 @@ public final class DayEleven {
         return result
     }
 
-    private func visibleOccupiedSeats(of seat: (Int, Int), in seats: [[String]]) -> Int {
+    private func visibleOccupiedSeats(of seat: (Int, Int), in seats: [[Character]]) -> Int {
         let allLeft = hasVisibleOccupiedSeat(from: seat, in: seats, rowMutator: { $0 }, columnMutator: { $0 - 1 })
         let allRight = hasVisibleOccupiedSeat(from: seat, in: seats, rowMutator: { $0 }, columnMutator: { $0 + 1 })
         let allTop = hasVisibleOccupiedSeat(from: seat, in: seats, rowMutator: { $0 - 1}, columnMutator: { $0 })
@@ -113,7 +126,7 @@ public final class DayEleven {
         return result.filter { $0 == true }.count
     }
 
-    private func hasVisibleOccupiedSeat(from index: (Int, Int), in seats: [[String]], rowMutator: (Int) -> Int, columnMutator: (Int) -> Int) -> Bool {
+    private func hasVisibleOccupiedSeat(from index: (Int, Int), in seats: [[Character]], rowMutator: (Int) -> Int, columnMutator: (Int) -> Int) -> Bool {
 
         var index = index
 
@@ -130,7 +143,7 @@ public final class DayEleven {
         return false
     }
 
-    private func countOccupiedSeats(_ seats: [[String]]) -> Int {
+    private func countOccupiedSeats(_ seats: [[Character]]) -> Int {
         seats.flatMap { $0 }.filter { $0 == "#" }.count
     }
 }
