@@ -22,12 +22,12 @@ public final class DayTwelve {
     }
 
     struct Position {
-        var direction: Direction
+        var directions: [Direction]
         var xPos: Int
         var yPos: Int
 
         mutating func forward(_ value: Int) {
-            advance(direction, for: value)
+            advance(directions[0], for: value)
         }
 
         mutating func advance(_ direction: Direction, for value: Int) {
@@ -48,17 +48,7 @@ public final class DayTwelve {
 
             while count >= 1 {
                 count -= 1
-
-                switch direction {
-                case .north:
-                    direction = .west
-                case .south:
-                    direction = .east
-                case .east:
-                    direction = .north
-                case .west:
-                    direction = .south
-                }
+                directions.rotateSingleRight()
             }
         }
 
@@ -67,17 +57,7 @@ public final class DayTwelve {
 
             while count >= 1 {
                 count -= 1
-
-                switch direction {
-                case .north:
-                    direction = .east
-                case .south:
-                    direction = .west
-                case .east:
-                    direction = .south
-                case .west:
-                    direction = .north
-                }
+                directions.rotateSingleLeft()
             }
         }
 
@@ -172,7 +152,7 @@ public final class DayTwelve {
     }
 
     public func partOne() -> Int {
-        var currentPosition = Position(direction: .east, xPos: 0, yPos: 0)
+        var currentPosition = Position(directions: [.east, .south, .west, .north], xPos: 0, yPos: 0)
 
         for instruction in instructions {
             processInstruction(instruction, on: &currentPosition)
@@ -201,7 +181,7 @@ public final class DayTwelve {
     }
 
     public func partTwo() -> Int {
-        var shipPosition = Position(direction: .east, xPos: 0, yPos: 0)
+        var shipPosition = Position(directions: [.east, .south, .west, .north], xPos: 0, yPos: 0)
         var waypoint = Waypoint(xPos: 10, yPos: -1)
 
         for instruction in instructions {
