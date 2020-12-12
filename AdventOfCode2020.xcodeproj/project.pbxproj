@@ -66,6 +66,12 @@
 		DDE71C3D25837186008AE9BE /* DayElevenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71C3B25837186008AE9BE /* DayElevenTests.swift */; };
 		DDE71C492583790A008AE9BE /* DayEleven.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71C482583790A008AE9BE /* DayEleven.txt */; };
 		DDE71C4C25837914008AE9BE /* DayEleven.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71C482583790A008AE9BE /* DayEleven.txt */; };
+		DDE71CE72584CE79008AE9BE /* DayTwelve.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71CE62584CE79008AE9BE /* DayTwelve.swift */; };
+		DDE71CEB2584D272008AE9BE /* DayTwelveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71CEA2584D271008AE9BE /* DayTwelveTests.swift */; };
+		DDE71CEF2584D29F008AE9BE /* DayTwelve-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71CEE2584D29F008AE9BE /* DayTwelve-sample.txt */; };
+		DDE71CF42584D2AE008AE9BE /* DayTwelve-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71CEE2584D29F008AE9BE /* DayTwelve-sample.txt */; };
+		DDE71CF82584D64B008AE9BE /* DayTwelve.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71CF72584D64B008AE9BE /* DayTwelve.txt */; };
+		DDE71CFB2584D64F008AE9BE /* DayTwelve.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71CF72584D64B008AE9BE /* DayTwelve.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +130,10 @@
 		DDE71C3625836F0B008AE9BE /* DayEleven-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEleven-sample.txt"; sourceTree = "<group>"; };
 		DDE71C3B25837186008AE9BE /* DayElevenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayElevenTests.swift; sourceTree = "<group>"; };
 		DDE71C482583790A008AE9BE /* DayEleven.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayEleven.txt; sourceTree = "<group>"; };
+		DDE71CE62584CE79008AE9BE /* DayTwelve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwelve.swift; sourceTree = "<group>"; };
+		DDE71CEA2584D271008AE9BE /* DayTwelveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwelveTests.swift; sourceTree = "<group>"; };
+		DDE71CEE2584D29F008AE9BE /* DayTwelve-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayTwelve-sample.txt"; sourceTree = "<group>"; };
+		DDE71CF72584D64B008AE9BE /* DayTwelve.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayTwelve.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +205,7 @@
 		DD467B8625784C0F00DC9705 /* AdventOfCode2020 */ = {
 			isa = PBXGroup;
 			children = (
+				DDE71CE52584CE62008AE9BE /* Day Twelve */,
 				DDE71C2F25836EA2008AE9BE /* Day Eleven */,
 				DDE71BBB258222F0008AE9BE /* Day Ten */,
 				DD467BC42578524E00DC9705 /* Util */,
@@ -227,6 +238,7 @@
 				DDE71B822580C8FB008AE9BE /* DayNineTests.swift */,
 				DDE71BC2258223B8008AE9BE /* DayTenTests.swift */,
 				DDE71C3B25837186008AE9BE /* DayElevenTests.swift */,
+				DDE71CEA2584D271008AE9BE /* DayTwelveTests.swift */,
 				DD467B9425784C0F00DC9705 /* Info.plist */,
 			);
 			path = AdventOfCode2020Tests;
@@ -314,6 +326,16 @@
 				DDE71C482583790A008AE9BE /* DayEleven.txt */,
 			);
 			path = "Day Eleven";
+			sourceTree = "<group>";
+		};
+		DDE71CE52584CE62008AE9BE /* Day Twelve */ = {
+			isa = PBXGroup;
+			children = (
+				DDE71CE62584CE79008AE9BE /* DayTwelve.swift */,
+				DDE71CEE2584D29F008AE9BE /* DayTwelve-sample.txt */,
+				DDE71CF72584D64B008AE9BE /* DayTwelve.txt */,
+			);
+			path = "Day Twelve";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,10 +436,12 @@
 				DD467BD62578E34000DC9705 /* DayThree.txt in Resources */,
 				DDE25B2C257F78A1007231BA /* DayEight-sample.txt in Resources */,
 				DDE71C492583790A008AE9BE /* DayEleven.txt in Resources */,
+				DDE71CEF2584D29F008AE9BE /* DayTwelve-sample.txt in Resources */,
 				DD2D2F70257CF09900F17211 /* DaySix-sample.txt in Resources */,
 				DDE71BC925822400008AE9BE /* DayTen-sample.txt in Resources */,
 				DDE71B902580C995008AE9BE /* DayNine-sample.txt in Resources */,
 				DD8E413A257A31E600CF6B1D /* DayFour.txt in Resources */,
+				DDE71CF82584D64B008AE9BE /* DayTwelve.txt in Resources */,
 				DDE71B992580CB3F008AE9BE /* DayNine.txt in Resources */,
 				DDE25B39257F7A7E007231BA /* DayEight.txt in Resources */,
 				DD2D2F63257CDC5800F17211 /* DaySix.txt in Resources */,
@@ -438,10 +462,12 @@
 				DD467BB225784EDE00DC9705 /* DayOne.txt in Resources */,
 				DDE71B952580CAEC008AE9BE /* DayNine-sample.txt in Resources */,
 				DDE71C4C25837914008AE9BE /* DayEleven.txt in Resources */,
+				DDE71CF42584D2AE008AE9BE /* DayTwelve-sample.txt in Resources */,
 				DDE25B35257F797B007231BA /* DayEight-sample.txt in Resources */,
 				DDE71BCC2582245C008AE9BE /* DayTen-sample.txt in Resources */,
 				DD2D2F73257CF0C800F17211 /* DaySix-sample.txt in Resources */,
 				DD8E40A42578FAF600CF6B1D /* DayThree.txt in Resources */,
+				DDE71CFB2584D64F008AE9BE /* DayTwelve.txt in Resources */,
 				DDE71B9C2580CB49008AE9BE /* DayNine.txt in Resources */,
 				DDE25B3C257F7A87007231BA /* DayEight.txt in Resources */,
 				DD2D2F66257CDC5B00F17211 /* DaySix.txt in Resources */,
@@ -463,6 +489,7 @@
 				DD8E4134257A310100CF6B1D /* DayFour.swift in Sources */,
 				DDE71B8A2580C935008AE9BE /* DayNine.swift in Sources */,
 				DD2D2F5D257CDC3700F17211 /* DaySix.swift in Sources */,
+				DDE71CE72584CE79008AE9BE /* DayTwelve.swift in Sources */,
 				DD467BA125784C2200DC9705 /* DayOne.swift in Sources */,
 				DD467BC62578525B00DC9705 /* Extensions.swift in Sources */,
 				DD467BBD257851D200DC9705 /* DayTwo.swift in Sources */,
@@ -480,6 +507,7 @@
 			files = (
 				DDE25B30257F78B7007231BA /* DayEightTests.swift in Sources */,
 				DD2D2F7E257E292300F17211 /* DaySevenTests.swift in Sources */,
+				DDE71CEB2584D272008AE9BE /* DayTwelveTests.swift in Sources */,
 				DD467B9325784C0F00DC9705 /* DayOneTests.swift in Sources */,
 				DD2D2F49257BD8CA00F17211 /* DayFiveTests.swift in Sources */,
 				DD467BCC257853DA00DC9705 /* DayTwoTests.swift in Sources */,
