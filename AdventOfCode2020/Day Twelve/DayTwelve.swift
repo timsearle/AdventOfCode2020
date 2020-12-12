@@ -2,10 +2,6 @@ public final class DayTwelve {
     struct Instruction: CustomStringConvertible {
         let action: Action
         let value: Int
-
-        var description: String {
-            return "\(action.rawValue)\(value)"
-        }
     }
 
     enum Action: String {
@@ -31,16 +27,7 @@ public final class DayTwelve {
         var yPos: Int
 
         mutating func forward(_ value: Int) {
-            switch direction {
-            case .north:
-                yPos -= value
-            case .south:
-                yPos += value
-            case .east:
-                xPos += value
-            case .west:
-                xPos -= value
-            }
+            advance(direction, for: value)
         }
 
         mutating func advance(_ direction: Direction, for value: Int) {
@@ -163,31 +150,12 @@ public final class DayTwelve {
             let currentXDirection: Direction = xPos >= 0 ? .east : .west
             let currentYDirection: Direction = yPos >= 0 ? .south : .north
 
-            var positions = [Int?]()
+            var positions = [Int?](repeating: nil, count: 4)
 
-            if currentYDirection == .north {
-                positions.append(abs(yPos))
-            } else {
-                positions.append(nil)
-            }
-
-            if currentXDirection == .east {
-                positions.append(abs(xPos))
-            } else {
-                positions.append(nil)
-            }
-
-            if currentYDirection == .south {
-                positions.append(abs(yPos))
-            } else {
-                positions.append(nil)
-            }
-
-            if currentXDirection == .west {
-                positions.append(abs(xPos))
-            } else {
-                positions.append(nil)
-            }
+            positions[0] = currentYDirection == .north ? abs(yPos) : nil
+            positions[1] = currentXDirection == .east ? abs(xPos) : nil
+            positions[2] = currentYDirection == .south ? abs(yPos) : nil
+            positions[3] = currentXDirection == .west ? abs(xPos) : nil
 
             return positions
         }

@@ -24,6 +24,6 @@ class DayTwelveTests: XCTestCase {
 
     func testDayTwelve_2() {
         let dayTwelve = DayTwelve(input: makeInput())
-        XCTAssertEqual(286, dayTwelve.partTwo())
+        XCTAssertEqual(42073, dayTwelve.partTwo())
     }
 }
