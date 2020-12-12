@@ -100,75 +100,6 @@ public final class DayTwelve {
         }
     }
 
-    private let instructions: [Instruction]
-
-    public init(input: String) {
-        instructions = input
-            .components(separatedBy: .newlines)
-            .filter { !$0.isEmpty }
-            .map { Instruction(action: Action(rawValue: $0[0])!,
-                               value: Int(String($0[1..<$0.count]))!) }
-    }
-
-    public func partOne() -> Int {
-        var currentPosition = Position(direction: .east, xPos: 0, yPos: 0)
-
-        for instruction in instructions {
-            processInstruction(instruction, on: &currentPosition)
-        }
-
-        return abs(currentPosition.xPos) + abs(currentPosition.yPos)
-    }
-
-    private func processInstruction(_ instruction: Instruction, on position: inout Position) {
-        switch instruction.action {
-        case .north:
-            position.advance(.north, for: instruction.value)
-        case .south:
-            position.advance(.south, for: instruction.value)
-        case .east:
-            position.advance(.east, for: instruction.value)
-        case .west:
-            position.advance(.west, for: instruction.value)
-        case .left:
-            position.turnLeft(instruction.value)
-        case .right:
-            position.turnRight(instruction.value)
-        case .forward:
-            position.forward(instruction.value)
-        }
-    }
-
-    public func partTwo() -> Int {
-        var shipPosition = Position(direction: .east, xPos: 0, yPos: 0)
-        var waypoint = Waypoint(xPos: 10, yPos: -1)
-
-        for instruction in instructions {
-            processInstruction(instruction, on: &shipPosition, waypoint: &waypoint)
-        }
-
-        return abs(shipPosition.xPos) + abs(shipPosition.yPos)
-    }
-
-    private func processInstruction(_ instruction: Instruction, on position: inout Position, waypoint: inout Waypoint) {
-        switch instruction.action {
-        case .north:
-            waypoint.advance(.north, for: instruction.value)
-        case .south:
-            waypoint.advance(.south, for: instruction.value)
-        case .east:
-            waypoint.advance(.east, for: instruction.value)
-        case .west:
-            waypoint.advance(.west, for: instruction.value)
-        case .left:
-            waypoint.turnLeft(instruction.value)
-        case .right:
-            waypoint.turnRight(instruction.value)
-        case .forward:
-            position.apply(waypoint, times: instruction.value)
-        }
-    }
-
     struct Waypoint {
         var xPos: Int
         var yPos: Int
@@ -260,18 +191,74 @@ public final class DayTwelve {
 
             return positions
         }
+    }
 
-        func rotateClockwise(_ direction: Direction) -> Direction {
-            switch direction {
-            case .north:
-                return .east
-            case .south:
-                return .west
-            case .east:
-                return .south
-            case .west:
-                return .north
-            }
+    private let instructions: [Instruction]
+
+    public init(input: String) {
+        instructions = input
+            .components(separatedBy: .newlines)
+            .filter { !$0.isEmpty }
+            .map { Instruction(action: Action(rawValue: $0[0])!,
+                               value: Int(String($0[1..<$0.count]))!) }
+    }
+
+    public func partOne() -> Int {
+        var currentPosition = Position(direction: .east, xPos: 0, yPos: 0)
+
+        for instruction in instructions {
+            processInstruction(instruction, on: &currentPosition)
+        }
+
+        return abs(currentPosition.xPos) + abs(currentPosition.yPos)
+    }
+
+    private func processInstruction(_ instruction: Instruction, on position: inout Position) {
+        switch instruction.action {
+        case .north:
+            position.advance(.north, for: instruction.value)
+        case .south:
+            position.advance(.south, for: instruction.value)
+        case .east:
+            position.advance(.east, for: instruction.value)
+        case .west:
+            position.advance(.west, for: instruction.value)
+        case .left:
+            position.turnLeft(instruction.value)
+        case .right:
+            position.turnRight(instruction.value)
+        case .forward:
+            position.forward(instruction.value)
+        }
+    }
+
+    public func partTwo() -> Int {
+        var shipPosition = Position(direction: .east, xPos: 0, yPos: 0)
+        var waypoint = Waypoint(xPos: 10, yPos: -1)
+
+        for instruction in instructions {
+            processInstruction(instruction, on: &shipPosition, waypoint: &waypoint)
+        }
+
+        return abs(shipPosition.xPos) + abs(shipPosition.yPos)
+    }
+
+    private func processInstruction(_ instruction: Instruction, on position: inout Position, waypoint: inout Waypoint) {
+        switch instruction.action {
+        case .north:
+            waypoint.advance(.north, for: instruction.value)
+        case .south:
+            waypoint.advance(.south, for: instruction.value)
+        case .east:
+            waypoint.advance(.east, for: instruction.value)
+        case .west:
+            waypoint.advance(.west, for: instruction.value)
+        case .left:
+            waypoint.turnLeft(instruction.value)
+        case .right:
+            waypoint.turnRight(instruction.value)
+        case .forward:
+            position.apply(waypoint, times: instruction.value)
         }
     }
 }
