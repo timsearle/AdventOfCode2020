@@ -22,6 +22,22 @@ public extension Array {
     subscript (safe index: Int) -> Element? {
       indices.contains(index) ? self[index] : nil
     }
+
+    mutating func rotateSingleRight() {
+        let last = self[count - 1]
+        for i in (1..<count).reversed() {
+            self[i] = self[i - 1]
+        }
+        self[0] = last
+    }
+
+    mutating func rotateSingleLeft() {
+        let first = self[0]
+        for i in 0..<count - 1 {
+            self[i] = self[i + 1]
+        }
+        self[count - 1] = first
+    }
 }
 
 public extension Array where Element == String {

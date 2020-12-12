@@ -93,6 +93,11 @@ public final class DayTwelve {
                 }
             }
         }
+
+        mutating func apply(_ waypoint: Waypoint, times: Int) {
+            xPos += waypoint.xPos * times
+            yPos += waypoint.yPos * times
+        }
     }
 
     private let instructions: [Instruction]
@@ -131,6 +136,142 @@ public final class DayTwelve {
             position.turnRight(instruction.value)
         case .forward:
             position.forward(instruction.value)
+        }
+    }
+
+    public func partTwo() -> Int {
+        var shipPosition = Position(direction: .east, xPos: 0, yPos: 0)
+        var waypoint = Waypoint(xPos: 10, yPos: -1)
+
+        for instruction in instructions {
+            processInstruction(instruction, on: &shipPosition, waypoint: &waypoint)
+        }
+
+        return abs(shipPosition.xPos) + abs(shipPosition.yPos)
+    }
+
+    private func processInstruction(_ instruction: Instruction, on position: inout Position, waypoint: inout Waypoint) {
+        switch instruction.action {
+        case .north:
+            waypoint.advance(.north, for: instruction.value)
+        case .south:
+            waypoint.advance(.south, for: instruction.value)
+        case .east:
+            waypoint.advance(.east, for: instruction.value)
+        case .west:
+            waypoint.advance(.west, for: instruction.value)
+        case .left:
+            waypoint.turnLeft(instruction.value)
+        case .right:
+            waypoint.turnRight(instruction.value)
+        case .forward:
+            position.apply(waypoint, times: instruction.value)
+        }
+    }
+
+    struct Waypoint {
+        var xPos: Int
+        var yPos: Int
+
+        mutating func advance(_ direction: Direction, for value: Int) {
+            switch direction {
+            case .north:
+                yPos -= value
+            case .south:
+                yPos += value
+            case .east:
+                xPos += value
+            case .west:
+                xPos -= value
+            }
+        }
+
+        mutating func turnLeft(_ value: Int) {
+            let count = value / 90
+
+            var positions = self.positions
+
+            for _ in 0..<count {
+                positions.rotateSingleLeft()
+            }
+
+            update(positions)
+        }
+
+        mutating func turnRight(_ value: Int) {
+            let count = value / 90
+
+            var positions = self.positions
+
+            for _ in 0..<count {
+                positions.rotateSingleRight()
+            }
+
+            update(positions)
+        }
+
+        mutating func update(_ positions: [Int?]) {
+            if let north = positions[0] {
+                yPos = -(north)
+            }
+
+            if let east = positions[1] {
+                xPos = east
+            }
+
+            if let south = positions[2] {
+                yPos = south
+            }
+
+            if let west = positions[3] {
+                xPos = -(west)
+            }
+        }
+
+        var positions: [Int?] {
+            let currentXDirection: Direction = xPos >= 0 ? .east : .west
+            let currentYDirection: Direction = yPos >= 0 ? .south : .north
+
+            var positions = [Int?]()
+
+            if currentYDirection == .north {
+                positions.append(abs(yPos))
+            } else {
+                positions.append(nil)
+            }
+
+            if currentXDirection == .east {
+                positions.append(abs(xPos))
+            } else {
+                positions.append(nil)
+            }
+
+            if currentYDirection == .south {
+                positions.append(abs(yPos))
+            } else {
+                positions.append(nil)
+            }
+
+            if currentXDirection == .west {
+                positions.append(abs(xPos))
+            } else {
+                positions.append(nil)
+            }
+
+            return positions
+        }
+
+        func rotateClockwise(_ direction: Direction) -> Direction {
+            switch direction {
+            case .north:
+                return .east
+            case .south:
+                return .west
+            case .east:
+                return .south
+            case .west:
+                return .north
+            }
         }
     }
 }
