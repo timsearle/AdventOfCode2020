@@ -1,5 +1,5 @@
 public final class DayTwelve {
-    struct Instruction: CustomStringConvertible {
+    struct Instruction {
         let action: Action
         let value: Int
     }
