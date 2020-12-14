@@ -133,11 +133,23 @@ public final class DayEleven {
         index.0 = rowMutator(index.0)
         index.1 = columnMutator(index.1)
 
-        while let next = seats[safe: index.0]?[safe: index.1] {
+        guard index.0 >= 0 && index.0 < seats.count, index.1 >= 0 && index.1 < seats[index.0].count else {
+            return false
+        }
+
+        var next = seats[index.0][index.1]
+
+        while true {
             if next == "#" { return true }
             if next == "L" { return false }
             index.0 = rowMutator(index.0)
             index.1 = columnMutator(index.1)
+
+            guard index.0 >= 0 && index.0 < seats.count, index.1 >= 0 && index.1 < seats[index.0].count else {
+                break
+            }
+
+            next = seats[index.0][index.1]
         }
 
         return false

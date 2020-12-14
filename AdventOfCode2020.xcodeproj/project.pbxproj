@@ -42,6 +42,8 @@
 		DD8E413A257A31E600CF6B1D /* DayFour.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8E4139257A31E600CF6B1D /* DayFour.txt */; };
 		DD8E413E257A320500CF6B1D /* DayFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E413D257A320500CF6B1D /* DayFourTests.swift */; };
 		DD8E4143257A33C200CF6B1D /* DayFour.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD8E4139257A31E600CF6B1D /* DayFour.txt */; };
+		DDA6336C2587FA6200422F77 /* DayFourteen-sample2.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDA6336B2587FA6200422F77 /* DayFourteen-sample2.txt */; };
+		DDC5E7AB2587FAE2006F546C /* DayFourteen-sample2.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDA6336B2587FA6200422F77 /* DayFourteen-sample2.txt */; };
 		DDE25B26257F77AC007231BA /* DayEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE25B25257F77AC007231BA /* DayEight.swift */; };
 		DDE25B2C257F78A1007231BA /* DayEight-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE25B2B257F78A1007231BA /* DayEight-sample.txt */; };
 		DDE25B30257F78B7007231BA /* DayEightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE25B2F257F78B7007231BA /* DayEightTests.swift */; };
@@ -78,6 +80,13 @@
 		DDE71D25258627B4008AE9BE /* DayThirteen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D21258627A9008AE9BE /* DayThirteen-sample.txt */; };
 		DDE71D29258629EC008AE9BE /* DayThirteen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D28258629EC008AE9BE /* DayThirteen.txt */; };
 		DDE71D2C258629F0008AE9BE /* DayThirteen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D28258629EC008AE9BE /* DayThirteen.txt */; };
+		DDE71D3625863CC3008AE9BE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71D3525863CC2008AE9BE /* main.swift */; };
+		DDE71D4A258773C8008AE9BE /* DayFourteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71D49258773C7008AE9BE /* DayFourteen.swift */; };
+		DDE71D5225877712008AE9BE /* DayFourteenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE71D5125877711008AE9BE /* DayFourteenTests.swift */; };
+		DDE71D572587776D008AE9BE /* DayFourteen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D562587776D008AE9BE /* DayFourteen-sample.txt */; };
+		DDE71D5E25877771008AE9BE /* DayFourteen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D562587776D008AE9BE /* DayFourteen-sample.txt */; };
+		DDE71D632587821C008AE9BE /* DayFourteen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D622587821C008AE9BE /* DayFourteen.txt */; };
+		DDE71D642587821C008AE9BE /* DayFourteen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDE71D622587821C008AE9BE /* DayFourteen.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +97,26 @@
 			remoteGlobalIDString = DD467B8325784C0E00DC9705;
 			remoteInfo = AdventOfCode2020;
 		};
+		DDE71D4025863E56008AE9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD467B7B25784C0E00DC9705 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD467B8325784C0E00DC9705;
+			remoteInfo = AdventOfCode2020;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDE71D3125863CC2008AE9BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DD2D2F3E257BD5F400F17211 /* DayFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFive.swift; sourceTree = "<group>"; };
@@ -120,6 +148,7 @@
 		DD8E4133257A310000CF6B1D /* DayFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFour.swift; sourceTree = "<group>"; };
 		DD8E4139257A31E600CF6B1D /* DayFour.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayFour.txt; sourceTree = "<group>"; };
 		DD8E413D257A320500CF6B1D /* DayFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFourTests.swift; sourceTree = "<group>"; };
+		DDA6336B2587FA6200422F77 /* DayFourteen-sample2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayFourteen-sample2.txt"; sourceTree = "<group>"; };
 		DDE25B25257F77AC007231BA /* DayEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEight.swift; sourceTree = "<group>"; };
 		DDE25B2B257F78A1007231BA /* DayEight-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEight-sample.txt"; sourceTree = "<group>"; };
 		DDE25B2F257F78B7007231BA /* DayEightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEightTests.swift; sourceTree = "<group>"; };
@@ -144,6 +173,12 @@
 		DDE71D1B2586276B008AE9BE /* DayThirteenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayThirteenTests.swift; sourceTree = "<group>"; };
 		DDE71D21258627A9008AE9BE /* DayThirteen-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayThirteen-sample.txt"; sourceTree = "<group>"; };
 		DDE71D28258629EC008AE9BE /* DayThirteen.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayThirteen.txt; sourceTree = "<group>"; };
+		DDE71D3325863CC2008AE9BE /* TestHarness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestHarness; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE71D3525863CC2008AE9BE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DDE71D49258773C7008AE9BE /* DayFourteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFourteen.swift; sourceTree = "<group>"; };
+		DDE71D5125877711008AE9BE /* DayFourteenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFourteenTests.swift; sourceTree = "<group>"; };
+		DDE71D562587776D008AE9BE /* DayFourteen-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayFourteen-sample.txt"; sourceTree = "<group>"; };
+		DDE71D622587821C008AE9BE /* DayFourteen.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayFourteen.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD467B8E25784C0F00DC9705 /* AdventOfCode2020.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE71D3025863CC2008AE9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +241,7 @@
 			children = (
 				DD467B8625784C0F00DC9705 /* AdventOfCode2020 */,
 				DD467B9125784C0F00DC9705 /* AdventOfCode2020Tests */,
+				DDE71D3425863CC2008AE9BE /* TestHarness */,
 				DD467B8525784C0E00DC9705 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -208,6 +251,7 @@
 			children = (
 				DD467B8425784C0E00DC9705 /* AdventOfCode2020.framework */,
 				DD467B8D25784C0F00DC9705 /* AdventOfCode2020Tests.xctest */,
+				DDE71D3325863CC2008AE9BE /* TestHarness */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +259,7 @@
 		DD467B8625784C0F00DC9705 /* AdventOfCode2020 */ = {
 			isa = PBXGroup;
 			children = (
+				DDE71D48258773AA008AE9BE /* Day Fourteen */,
 				DDE71D1425862333008AE9BE /* Day Thirteen */,
 				DDE71CE52584CE62008AE9BE /* Day Twelve */,
 				DDE71C2F25836EA2008AE9BE /* Day Eleven */,
@@ -251,6 +296,7 @@
 				DDE71C3B25837186008AE9BE /* DayElevenTests.swift */,
 				DDE71CEA2584D271008AE9BE /* DayTwelveTests.swift */,
 				DDE71D1B2586276B008AE9BE /* DayThirteenTests.swift */,
+				DDE71D5125877711008AE9BE /* DayFourteenTests.swift */,
 				DD467B9425784C0F00DC9705 /* Info.plist */,
 			);
 			path = AdventOfCode2020Tests;
@@ -360,6 +406,25 @@
 			path = "Day Thirteen";
 			sourceTree = "<group>";
 		};
+		DDE71D3425863CC2008AE9BE /* TestHarness */ = {
+			isa = PBXGroup;
+			children = (
+				DDE71D3525863CC2008AE9BE /* main.swift */,
+			);
+			path = TestHarness;
+			sourceTree = "<group>";
+		};
+		DDE71D48258773AA008AE9BE /* Day Fourteen */ = {
+			isa = PBXGroup;
+			children = (
+				DDE71D49258773C7008AE9BE /* DayFourteen.swift */,
+				DDE71D562587776D008AE9BE /* DayFourteen-sample.txt */,
+				DDE71D622587821C008AE9BE /* DayFourteen.txt */,
+				DDA6336B2587FA6200422F77 /* DayFourteen-sample2.txt */,
+			);
+			path = "Day Fourteen";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -410,13 +475,31 @@
 			productReference = DD467B8D25784C0F00DC9705 /* AdventOfCode2020Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DDE71D3225863CC2008AE9BE /* TestHarness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE71D3725863CC3008AE9BE /* Build configuration list for PBXNativeTarget "TestHarness" */;
+			buildPhases = (
+				DDE71D2F25863CC2008AE9BE /* Sources */,
+				DDE71D3025863CC2008AE9BE /* Frameworks */,
+				DDE71D3125863CC2008AE9BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDE71D4125863E56008AE9BE /* PBXTargetDependency */,
+			);
+			name = TestHarness;
+			productName = TestHarness;
+			productReference = DDE71D3325863CC2008AE9BE /* TestHarness */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DD467B7B25784C0E00DC9705 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					DD467B8325784C0E00DC9705 = {
@@ -425,6 +508,9 @@
 					};
 					DD467B8C25784C0F00DC9705 = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					DDE71D3225863CC2008AE9BE = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -443,6 +529,7 @@
 			targets = (
 				DD467B8325784C0E00DC9705 /* AdventOfCode2020 */,
 				DD467B8C25784C0F00DC9705 /* AdventOfCode2020Tests */,
+				DDE71D3225863CC2008AE9BE /* TestHarness */,
 			);
 		};
 /* End PBXProject section */
@@ -456,9 +543,11 @@
 				DDE71BD0258224A4008AE9BE /* DayTen.txt in Resources */,
 				DD467BA825784CF500DC9705 /* DayOne.txt in Resources */,
 				DD467BD62578E34000DC9705 /* DayThree.txt in Resources */,
+				DDA6336C2587FA6200422F77 /* DayFourteen-sample2.txt in Resources */,
 				DDE25B2C257F78A1007231BA /* DayEight-sample.txt in Resources */,
 				DDE71C492583790A008AE9BE /* DayEleven.txt in Resources */,
 				DDE71CEF2584D29F008AE9BE /* DayTwelve-sample.txt in Resources */,
+				DDE71D632587821C008AE9BE /* DayFourteen.txt in Resources */,
 				DDE71D29258629EC008AE9BE /* DayThirteen.txt in Resources */,
 				DD2D2F70257CF09900F17211 /* DaySix-sample.txt in Resources */,
 				DDE71BC925822400008AE9BE /* DayTen-sample.txt in Resources */,
@@ -467,6 +556,7 @@
 				DDE71CF82584D64B008AE9BE /* DayTwelve.txt in Resources */,
 				DDE71D22258627A9008AE9BE /* DayThirteen-sample.txt in Resources */,
 				DDE71B992580CB3F008AE9BE /* DayNine.txt in Resources */,
+				DDE71D572587776D008AE9BE /* DayFourteen-sample.txt in Resources */,
 				DDE25B39257F7A7E007231BA /* DayEight.txt in Resources */,
 				DD2D2F63257CDC5800F17211 /* DaySix.txt in Resources */,
 				DD2D2F8F257E3D2100F17211 /* DaySeven.txt in Resources */,
@@ -484,9 +574,11 @@
 				DDE71BD3258224C5008AE9BE /* DayTen.txt in Resources */,
 				DD2D2F58257BD97000F17211 /* DayFive.txt in Resources */,
 				DD467BB225784EDE00DC9705 /* DayOne.txt in Resources */,
+				DDC5E7AB2587FAE2006F546C /* DayFourteen-sample2.txt in Resources */,
 				DDE71B952580CAEC008AE9BE /* DayNine-sample.txt in Resources */,
 				DDE71C4C25837914008AE9BE /* DayEleven.txt in Resources */,
 				DDE71CF42584D2AE008AE9BE /* DayTwelve-sample.txt in Resources */,
+				DDE71D642587821C008AE9BE /* DayFourteen.txt in Resources */,
 				DDE71D2C258629F0008AE9BE /* DayThirteen.txt in Resources */,
 				DDE25B35257F797B007231BA /* DayEight-sample.txt in Resources */,
 				DDE71BCC2582245C008AE9BE /* DayTen-sample.txt in Resources */,
@@ -495,6 +587,7 @@
 				DDE71CFB2584D64F008AE9BE /* DayTwelve.txt in Resources */,
 				DDE71D25258627B4008AE9BE /* DayThirteen-sample.txt in Resources */,
 				DDE71B9C2580CB49008AE9BE /* DayNine.txt in Resources */,
+				DDE71D5E25877771008AE9BE /* DayFourteen-sample.txt in Resources */,
 				DDE25B3C257F7A87007231BA /* DayEight.txt in Resources */,
 				DD2D2F66257CDC5B00F17211 /* DaySix.txt in Resources */,
 				DD2D2F92257E3D2D00F17211 /* DaySeven.txt in Resources */,
@@ -517,6 +610,7 @@
 				DDE71B8A2580C935008AE9BE /* DayNine.swift in Sources */,
 				DD2D2F5D257CDC3700F17211 /* DaySix.swift in Sources */,
 				DDE71CE72584CE79008AE9BE /* DayTwelve.swift in Sources */,
+				DDE71D4A258773C8008AE9BE /* DayFourteen.swift in Sources */,
 				DD467BA125784C2200DC9705 /* DayOne.swift in Sources */,
 				DD467BC62578525B00DC9705 /* Extensions.swift in Sources */,
 				DD467BBD257851D200DC9705 /* DayTwo.swift in Sources */,
@@ -544,7 +638,16 @@
 				DD8E413E257A320500CF6B1D /* DayFourTests.swift in Sources */,
 				DDE71C3D25837186008AE9BE /* DayElevenTests.swift in Sources */,
 				DDE71B832580C8FB008AE9BE /* DayNineTests.swift in Sources */,
+				DDE71D5225877712008AE9BE /* DayFourteenTests.swift in Sources */,
 				DD8E40A12578FAC100CF6B1D /* DayThreeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE71D2F25863CC2008AE9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE71D3625863CC3008AE9BE /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +658,11 @@
 			isa = PBXTargetDependency;
 			target = DD467B8325784C0E00DC9705 /* AdventOfCode2020 */;
 			targetProxy = DD467B8F25784C0F00DC9705 /* PBXContainerItemProxy */;
+		};
+		DDE71D4125863E56008AE9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD467B8325784C0E00DC9705 /* AdventOfCode2020 */;
+			targetProxy = DDE71D4025863E56008AE9BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -766,6 +874,25 @@
 			};
 			name = Release;
 		};
+		DDE71D3825863CC3008AE9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DDE71D3925863CC3008AE9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -792,6 +919,15 @@
 			buildConfigurations = (
 				DD467B9C25784C0F00DC9705 /* Debug */,
 				DD467B9D25784C0F00DC9705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE71D3725863CC3008AE9BE /* Build configuration list for PBXNativeTarget "TestHarness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE71D3825863CC3008AE9BE /* Debug */,
+				DDE71D3925863CC3008AE9BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
