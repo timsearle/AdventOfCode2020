@@ -12,26 +12,26 @@ public final class DayFifteen {
 
     public func partOne(_ target: Int = 2020) -> Int {
         var cache = [Int: Int]()
-        var numbers = self.numbers
-        let initialLength = numbers.count
 
-        for (index, number) in numbers[0..<(initialLength-1)].enumerated() {
-            cache[number] = index + 1
+        for i in 0..<numbers.count-1 {
+            cache[numbers[i]] = i + 1
         }
 
-        for i in (initialLength - 1)..<target-1 {
-            let previousNumber = numbers[i]
+        var readNumber = numbers[numbers.count - 1]
+
+        for i in (numbers.count - 1)..<target-1 {
+            let previousNumber = readNumber
 
             if let previousTurn = cache[previousNumber] {
                 let nextNumber = (i + 1) - previousTurn
-                numbers.append(nextNumber)
+                readNumber = nextNumber
             } else {
-                numbers.append(0)
+                readNumber = 0
             }
             cache[previousNumber] = i + 1
         }
 
-        return numbers.last!
+        return readNumber
     }
 
     public func partTwo() -> Int {

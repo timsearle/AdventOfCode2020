@@ -14,11 +14,15 @@ class DayFifteenTests: XCTestCase {
 
     func testDayFifteen_1() {
         let dayFifteen = DayFifteen(input: makeInput())
-        XCTAssertEqual(319, dayFifteen.partOne())
+        measure {
+            XCTAssertEqual(319, dayFifteen.partOne())
+        }
     }
 
     func testDayFifteen_2() {
         let dayFifteen = DayFifteen(input: makeInput())
-        XCTAssertEqual(2424, dayFifteen.partTwo())
+        measure {
+            XCTAssertEqual(2424, dayFifteen.partTwo())
+        }
     }
 }
