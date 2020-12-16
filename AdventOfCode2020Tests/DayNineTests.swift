@@ -21,7 +21,7 @@ class DayNineTests: XCTestCase {
 
     func testDayNine_2_sample() {
         let dayNine = DayNine(input: makeInput(sample: true), preambleSize: 5)
-        XCTAssertEqual(62, dayNine.partTwo())
+        XCTAssertEqual(62, dayNine.partTwo(127))
     }
 
     func testDayNine_2() {

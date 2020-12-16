@@ -33,8 +33,8 @@ public final class DayNine {
         return false
     }
 
-    public func partTwo() -> Int {
-        let numbers = numbersSumming(to: 1492208709)
+    public func partTwo(_ target: Int = 1492208709) -> Int {
+        let numbers = numbersSumming(to: target)
         return numbers.min()! + numbers.max()!
     }
 

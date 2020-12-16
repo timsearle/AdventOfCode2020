@@ -13,7 +13,7 @@ public final class DayThirteen {
     }
 
     public func partOne() -> Int {
-        let (departureTime, bus) = busIDs
+        let (bus, departureTime) = busIDs
             .map { ($0, Int(ceil(Float(earliestTime) / Float($0)) * Float($0))) }
             .min { $0.1 < $1.1 }!
 
