@@ -14,11 +14,15 @@ class DaySixteenTests: XCTestCase {
 
     func testDaySixteen_1() {
         let daySixteen = DaySixteen(input: makeInput())
-        XCTAssertEqual(27911, daySixteen.partOne())
+        measure {
+            XCTAssertEqual(27911, daySixteen.partOne())
+        }
     }
 
-    func testDaySixteen_2_sample() {
-        let daySixteen = DaySixteen(input: makeInput(sample: true))
-        XCTAssertEqual(71, daySixteen.partTwo())
+    func testDaySixteen_2() {
+        let daySixteen = DaySixteen(input: makeInput())
+        measure {
+            XCTAssertEqual(737176602479, daySixteen.partTwo())
+        }
     }
 }
