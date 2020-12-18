@@ -18,4 +18,14 @@ class DaySeventeenTests: XCTestCase {
             XCTAssertEqual(317, daySeventeen.partOne())
         }
     }
+
+    func testDaySeventeen_2_sample() {
+        let daySeventeen = DaySeventeen(input: makeInput(sample: true))
+        XCTAssertEqual(848, daySeventeen.partTwo())
+    }
+
+    func testDaySeventeen_2() {
+        let daySeventeen = DaySeventeen(input: makeInput())
+        XCTAssertEqual(1692, daySeventeen.partTwo())
+    }
 }
