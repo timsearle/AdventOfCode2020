@@ -42,11 +42,13 @@
 		DD467BD12578545900DC9705 /* DayTwo.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BC0257851F400DC9705 /* DayTwo.txt */; };
 		DD467BD62578E34000DC9705 /* DayThree.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD467BD52578E34000DC9705 /* DayThree.txt */; };
 		DD4FB692258D3E3200DE8CD0 /* DayEighteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FB691258D3E3200DE8CD0 /* DayEighteen.swift */; };
-		DD4FB69A258D3E4400DE8CD0 /* DayEighteen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample.txt */; };
-		DD4FB69B258D3E4400DE8CD0 /* DayEighteen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample.txt */; };
+		DD4FB69A258D3E4400DE8CD0 /* DayEighteen-sample1.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample1.txt */; };
+		DD4FB69B258D3E4400DE8CD0 /* DayEighteen-sample1.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample1.txt */; };
 		DD4FB6A0258D3E4F00DE8CD0 /* DayEighteen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB69F258D3E4F00DE8CD0 /* DayEighteen.txt */; };
 		DD4FB6A1258D3E4F00DE8CD0 /* DayEighteen.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB69F258D3E4F00DE8CD0 /* DayEighteen.txt */; };
 		DD4FB6A7258D3E8100DE8CD0 /* DayEighteenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4FB6A5258D3E8100DE8CD0 /* DayEighteenTests.swift */; };
+		DD4FB6B8258EB01400DE8CD0 /* DayEighteen-sample2.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB6B7258EB01400DE8CD0 /* DayEighteen-sample2.txt */; };
+		DD4FB6C2258EB01800DE8CD0 /* DayEighteen-sample2.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD4FB6B7258EB01400DE8CD0 /* DayEighteen-sample2.txt */; };
 		DD7B0770258C0577006C7B69 /* DaySeventeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B076F258C0577006C7B69 /* DaySeventeen.swift */; };
 		DD7B0778258C130D006C7B69 /* DaySeventeenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B0777258C130D006C7B69 /* DaySeventeenTests.swift */; };
 		DD7B077D258C1343006C7B69 /* DaySeventeen-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD7B077C258C1343006C7B69 /* DaySeventeen-sample.txt */; };
@@ -172,9 +174,10 @@
 		DD467BCB257853DA00DC9705 /* DayTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwoTests.swift; sourceTree = "<group>"; };
 		DD467BD52578E34000DC9705 /* DayThree.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayThree.txt; sourceTree = "<group>"; };
 		DD4FB691258D3E3200DE8CD0 /* DayEighteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEighteen.swift; sourceTree = "<group>"; };
-		DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEighteen-sample.txt"; sourceTree = "<group>"; };
+		DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEighteen-sample1.txt"; sourceTree = "<group>"; };
 		DD4FB69F258D3E4F00DE8CD0 /* DayEighteen.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DayEighteen.txt; sourceTree = "<group>"; };
 		DD4FB6A5258D3E8100DE8CD0 /* DayEighteenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEighteenTests.swift; sourceTree = "<group>"; };
+		DD4FB6B7258EB01400DE8CD0 /* DayEighteen-sample2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DayEighteen-sample2.txt"; sourceTree = "<group>"; };
 		DD7B076F258C0577006C7B69 /* DaySeventeen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySeventeen.swift; sourceTree = "<group>"; };
 		DD7B0777258C130D006C7B69 /* DaySeventeenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySeventeenTests.swift; sourceTree = "<group>"; };
 		DD7B077C258C1343006C7B69 /* DaySeventeen-sample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "DaySeventeen-sample.txt"; sourceTree = "<group>"; };
@@ -399,7 +402,8 @@
 			isa = PBXGroup;
 			children = (
 				DD4FB691258D3E3200DE8CD0 /* DayEighteen.swift */,
-				DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample.txt */,
+				DD4FB699258D3E4400DE8CD0 /* DayEighteen-sample1.txt */,
+				DD4FB6B7258EB01400DE8CD0 /* DayEighteen-sample2.txt */,
 				DD4FB69F258D3E4F00DE8CD0 /* DayEighteen.txt */,
 			);
 			path = "Day Eighteen";
@@ -643,12 +647,13 @@
 				DDE71D29258629EC008AE9BE /* DayThirteen.txt in Resources */,
 				DD2D2F70257CF09900F17211 /* DaySix-sample.txt in Resources */,
 				DDE71BC925822400008AE9BE /* DayTen-sample.txt in Resources */,
-				DD4FB69A258D3E4400DE8CD0 /* DayEighteen-sample.txt in Resources */,
+				DD4FB69A258D3E4400DE8CD0 /* DayEighteen-sample1.txt in Resources */,
 				DDC5E89425892744006F546C /* DayFifteen-sample.txt in Resources */,
 				DDE71B902580C995008AE9BE /* DayNine-sample.txt in Resources */,
 				DD8E413A257A31E600CF6B1D /* DayFour.txt in Resources */,
 				DDE71CF82584D64B008AE9BE /* DayTwelve.txt in Resources */,
 				DDE71D22258627A9008AE9BE /* DayThirteen-sample.txt in Resources */,
+				DD4FB6B8258EB01400DE8CD0 /* DayEighteen-sample2.txt in Resources */,
 				DDE71B992580CB3F008AE9BE /* DayNine.txt in Resources */,
 				DDE71D572587776D008AE9BE /* DayFourteen-sample.txt in Resources */,
 				DDE25B39257F7A7E007231BA /* DayEight.txt in Resources */,
@@ -682,12 +687,13 @@
 				DDE71D2C258629F0008AE9BE /* DayThirteen.txt in Resources */,
 				DDE25B35257F797B007231BA /* DayEight-sample.txt in Resources */,
 				DDE71BCC2582245C008AE9BE /* DayTen-sample.txt in Resources */,
-				DD4FB69B258D3E4400DE8CD0 /* DayEighteen-sample.txt in Resources */,
+				DD4FB69B258D3E4400DE8CD0 /* DayEighteen-sample1.txt in Resources */,
 				DD2D2F73257CF0C800F17211 /* DaySix-sample.txt in Resources */,
 				DD8E40A42578FAF600CF6B1D /* DayThree.txt in Resources */,
 				DDE71CFB2584D64F008AE9BE /* DayTwelve.txt in Resources */,
 				DDE71D25258627B4008AE9BE /* DayThirteen-sample.txt in Resources */,
 				DDE71B9C2580CB49008AE9BE /* DayNine.txt in Resources */,
+				DD4FB6C2258EB01800DE8CD0 /* DayEighteen-sample2.txt in Resources */,
 				DDE71D5E25877771008AE9BE /* DayFourteen-sample.txt in Resources */,
 				DDE25B3C257F7A87007231BA /* DayEight.txt in Resources */,
 				DD2D2F66257CDC5B00F17211 /* DaySix.txt in Resources */,

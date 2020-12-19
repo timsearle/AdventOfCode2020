@@ -19,9 +19,11 @@ public final class DayEighteen {
         sums.map { evaluate($0) }.reduce(0, +)
     }
 
-    // ((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2
+    public func partTwo() -> Int {
+        sums.map { evaluate($0, isPartTwo: true) }.reduce(0, +)
+    }
 
-    private func evaluate(_ sum: String) -> Int {
+    private func evaluate(_ sum: String, isPartTwo: Bool = false) -> Int {
         var sum = sum
         var bracketCount = 0
         var subSum = ""
@@ -42,7 +44,7 @@ public final class DayEighteen {
                         subSum.removeFirst()
                         subSum.removeLast()
                     }
-                    let result = evaluate(subSum)
+                    let result = evaluate(subSum, isPartTwo: isPartTwo)
                     sum = sum.replacingOccurrences(of: "(\(subSum))", with: "\(result)")
                     subSum = "\(result)"
                 }
@@ -57,9 +59,18 @@ public final class DayEighteen {
         }
 
         if sum.contains("(") {
-            return evaluate(sum)
+            return evaluate(sum, isPartTwo: isPartTwo)
         }
-        return subEvaluate(sum)
+
+        return isPartTwo ? subEvaluateAdd(sum) : subEvaluate(sum)
+    }
+
+    private func subEvaluateAdd(_ sum: String) -> Int {
+        let components = sum.components(separatedBy: "*")
+
+        return components.reduce(into: 1) { value, sum in
+            value *= subEvaluate(sum)
+        }
     }
 
     private func subEvaluate(_ sum: String) -> Int {
